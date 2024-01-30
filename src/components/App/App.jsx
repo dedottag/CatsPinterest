@@ -4,7 +4,7 @@ import AllCats from "../AllCats/AllCats";
 import FavoriteCats from "../FavoriteCats/FavoriteCats";
 import Header from "../Header/Header";
 
-import { Route, Routes, Link } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 
 import { useEffect, useState } from "react";
 
