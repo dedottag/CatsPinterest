@@ -1,14 +1,14 @@
 import "./header.scss";
 import { Link } from "react-router-dom";
 
-const Header = ({ setFavoriteItem }) => {
+const Header = () => {
   return (
     <div className="header-container">
       <Link to="/">
-        <button onClick={() => setFavoriteItem(false)}>Все котики</button>{" "}
+        <button>Все котики</button>{" "}
       </Link>
       <Link to="/favorite-cats">
-        <button onClick={() => setFavoriteItem(true)}>Любимые котики</button>
+        <button>Любимые котики</button>
       </Link>
     </div>
   );

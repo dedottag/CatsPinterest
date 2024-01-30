@@ -16,7 +16,6 @@ import { useEffect, useState } from "react";
 const App = () => {
   const [catsItem, setCatsItem] = useState([]);
   const [favoriteCats, setFavoriteCats] = useState([]);
-  const [favoriteItem, setFavoriteItem] = useState(false);
   const [loading, setLoading] = useState(true);
 
   async function getCats() {
@@ -69,13 +68,12 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header setFavoriteItem={setFavoriteItem} />
+      <Header />
       <Routes>
         <Route
           path="/"
           element={
             <AllCats
-              favoriteItem={favoriteItem}
               catsItem={catsItem}
               addFavoriteCats={addFavoriteCats}
               getCats={getCats}
