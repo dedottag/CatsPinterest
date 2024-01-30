@@ -4,6 +4,8 @@ import AllCats from "../AllCats/AllCats";
 import FavoriteCats from "../FavoriteCats/FavoriteCats";
 import Header from "../Header/Header";
 
+import { Route, Routes, Link } from "react-router-dom";
+
 import { useEffect, useState } from "react";
 
 // const ApiKey =
@@ -68,15 +70,28 @@ const App = () => {
   return (
     <div className="App">
       <Header setFavoriteItem={setFavoriteItem} />
-      <AllCats
-        favoriteItem={favoriteItem}
-        catsItem={catsItem}
-        addFavoriteCats={addFavoriteCats}
-        getCats={getCats}
-        loading={loading}
-        favoriteCats={favoriteCats}
-        removeCat={removeCat}
-      />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <AllCats
+              favoriteItem={favoriteItem}
+              catsItem={catsItem}
+              addFavoriteCats={addFavoriteCats}
+              getCats={getCats}
+              loading={loading}
+              favoriteCats={favoriteCats}
+              removeCat={removeCat}
+            />
+          }
+        />
+        <Route
+          path="/favorite-cats"
+          element={
+            <FavoriteCats favoriteCats={favoriteCats} removeCat={removeCat} />
+          }
+        />
+      </Routes>
     </div>
   );
 };
