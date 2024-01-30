@@ -1,0 +1,26 @@
+.header-container {
+  background-color: rgb(73, 148, 236);
+  padding-left: 40px;
+  width: 100vw;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+button {
+  background-color: rgb(73, 148, 236);
+  border: none;
+  color: white;
+  height: 100%;
+  width: 130px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(36, 112, 198);
+}
+
+button:focus {
+  background-color: rgb(36, 112, 198);
+}
