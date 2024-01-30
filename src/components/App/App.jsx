@@ -15,8 +15,11 @@ import { useEffect, useState } from "react";
 
 const App = () => {
   const [catsItem, setCatsItem] = useState([]);
-  const [favoriteCats, setFavoriteCats] = useState([]);
+  const [favoriteCats, setFavoriteCats] = useState([
+    { id: "5vm", url: "https://cdn2.thecatapi.com/images/5vm.jpg" },
+  ]);
   const [loading, setLoading] = useState(true);
+  console.log(catsItem);
 
   async function getCats() {
     try {
@@ -55,7 +58,7 @@ const App = () => {
 
   useEffect(() => {
     const favoriteCats = JSON.parse(localStorage.getItem("cats-pinterest"));
-    setFavoriteCats(favoriteCats);
+    setFavoriteCats((cat) => [...cat, ...favoriteCats]);
   }, []);
 
   const removeCat = (catDel) => {
