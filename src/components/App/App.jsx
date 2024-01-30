@@ -58,7 +58,7 @@ const App = () => {
 
   useEffect(() => {
     const favoriteCats = JSON.parse(localStorage.getItem("cats-pinterest"));
-    setFavoriteCats((cat) => [...cat, ...favoriteCats]);
+    setFavoriteCats(favoriteCats);
   }, []);
 
   const removeCat = (catDel) => {
