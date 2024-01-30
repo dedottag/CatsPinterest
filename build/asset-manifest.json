@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/dedottag/CatsPinterest.git/static/css/main.91edc4db.css",
+    "main.js": "/dedottag/CatsPinterest.git/static/js/main.1f118b76.js",
+    "static/js/787.d4aba7ab.chunk.js": "/dedottag/CatsPinterest.git/static/js/787.d4aba7ab.chunk.js",
+    "index.html": "/dedottag/CatsPinterest.git/index.html",
+    "static/media/likeIcon.svg": "/dedottag/CatsPinterest.git/static/media/likeIcon.708eb07069c783d5fbd16f72fc0171ab.svg",
+    "static/media/notLikeIcon.svg": "/dedottag/CatsPinterest.git/static/media/notLikeIcon.84db52129192791e6352c204b9f18b53.svg",
+    "main.91edc4db.css.map": "/dedottag/CatsPinterest.git/static/css/main.91edc4db.css.map",
+    "main.1f118b76.js.map": "/dedottag/CatsPinterest.git/static/js/main.1f118b76.js.map",
+    "787.d4aba7ab.chunk.js.map": "/dedottag/CatsPinterest.git/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.91edc4db.css",
+    "static/js/main.1f118b76.js"
+  ]
+}
