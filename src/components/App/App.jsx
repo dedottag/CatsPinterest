@@ -68,15 +68,15 @@ const App = () => {
   return (
     <div className="App">
       <Header setFavoriteItem={setFavoriteItem} />
-      {favoriteItem ? (
-        <FavoriteCats favoriteCats={favoriteCats} removeCat={removeCat} />
-      ) : (
+      {!favoriteItem ? (
         <AllCats
           catsItem={catsItem}
           addFavoriteCats={addFavoriteCats}
           getCats={getCats}
           loading={loading}
         />
+      ) : (
+        <FavoriteCats favoriteCats={favoriteCats} removeCat={removeCat} />
       )}
     </div>
   );
